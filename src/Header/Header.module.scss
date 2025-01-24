@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:28rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2em;
+}
+.image{
+    display: flex;
+    width: 6%;
+    top:20%;
+    align-items: center;
+    justify-content: center;
+    }
+.box{
+    width: 50%;
+    display: flex;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    li{
+        cursor: pointer;
+
+    }
+}
