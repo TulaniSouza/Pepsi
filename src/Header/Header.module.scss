@@ -1,28 +1,71 @@
-.container{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:28rem;
-    font-family: "poppins", sans-serif;
+@import "../globalStyle/mixin.scss";
+
+
+.container {
+    gap: 28rem;
     font-size: 1.2em;
-}
-.image{
-    display: flex;
-    width: 6%;
-    top:20%;
-    align-items: center;
-    justify-content: center;
+    @include align ($justify: space-around, $align: center, $display: flex);
+
+    @include breakpoint(small) {
+        flex-direction: column;
+        height: 10vh;
+        
     }
-.box{
+    @include breakpoint(large) {
+        height: 10vh;
+        gap:0;
+    }
+}
+
+.image {
+    width: 6%;
+    top: 20%;
+    @include align ($justify: center, $align: center, $display: flex);
+
+    @include breakpoint(small) {
+        width: 12%;
+    }
+    @include breakpoint(large) {
+        width: 8%;
+    }
+}
+
+.box {
     width: 50%;
     display: flex;
-}
-.menu{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
 
-    li{
+    @include breakpoint(small) {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+    @include breakpoint(large) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu {
+    width: 100%;
+    @include align ($justify: space-evenly, $display: flex);
+    
+    li {
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: matrix(1.1, 0, 0, 1, 0, 0);
+        }
+
+    }
+
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        height: 10vh;
+        width: 90vw;
+        font-size: 1.5rem;
         cursor: pointer;
 
     }

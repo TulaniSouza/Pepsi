@@ -3,10 +3,12 @@ import s from "./Header.module.scss"
 
 
 const Header = () =>{
+
+
     return(
         <header className={s.container}>
-            <img className= {s.image}src={logo} alt="logo da Pepsi"/>
-            <nav className={s.box}>
+            <img className= {s.image}src={logo} alt="logo da Pepsi" />
+            <nav className={s.box} >
                 <ul className={s.menu}>
                     <li>Home</li>
                     <li>Products</li>

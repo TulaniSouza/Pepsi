@@ -26,8 +26,9 @@ const Main = () => {
                 <h2>THAT'S WHAT</h2>
                 <h1> I LIKE</h1>
                 <p>
-                    orem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente aspernatur possimus odio accusantium inventore. Vel perferendis molestias a unde eum dolorem officia doloremque! Doloribus asperiores quas vitae quisquam libero.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente aspernatur possimus odio accusantium inventore. Vel perferendis molestias a unde eum dolorem officia doloremque! Doloribus asperiores quas vitae quisquam libero.
                 </p>
+                <button>VIEW ALL PRODUCTS</button>
             </section>
 
             <section className={s.box_latas}>
